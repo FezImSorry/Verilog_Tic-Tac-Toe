@@ -1,0 +1,353 @@
+Simulator report for xogame
+Thu Aug 18 22:20:30 2016
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 148 nodes    ;
+; Simulation Coverage         ;      39.46 % ;
+; Total Number of Transitions ; 253          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C8 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      39.46 % ;
+; Total nodes checked                                 ; 148          ;
+; Total output ports checked                          ; 147          ;
+; Total output ports with complete 1/0-value coverage ; 58           ;
+; Total output ports with no 1/0-value coverage       ; 45           ;
+; Total output ports with no 1-value coverage         ; 57           ;
+; Total output ports with no 0-value coverage         ; 77           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                          ;
++-------------------------+-------------------------+------------------+
+; Node Name               ; Output Port Name        ; Output Port Type ;
++-------------------------+-------------------------+------------------+
+; |xogame|b4[1]~0         ; |xogame|b4[1]~0         ; combout          ;
+; |xogame|always0~0       ; |xogame|always0~0       ; combout          ;
+; |xogame|always0~1       ; |xogame|always0~1       ; combout          ;
+; |xogame|always0~2       ; |xogame|always0~2       ; combout          ;
+; |xogame|always0~3       ; |xogame|always0~3       ; combout          ;
+; |xogame|b3~0            ; |xogame|b3~0            ; combout          ;
+; |xogame|always0~4       ; |xogame|always0~4       ; combout          ;
+; |xogame|always0~5       ; |xogame|always0~5       ; combout          ;
+; |xogame|b9~4            ; |xogame|b9~4            ; combout          ;
+; |xogame|always0~6       ; |xogame|always0~6       ; combout          ;
+; |xogame|always0~7       ; |xogame|always0~7       ; combout          ;
+; |xogame|b4~1            ; |xogame|b4~1            ; combout          ;
+; |xogame|always0~8       ; |xogame|always0~8       ; combout          ;
+; |xogame|always0~9       ; |xogame|always0~9       ; combout          ;
+; |xogame|always0~10      ; |xogame|always0~10      ; combout          ;
+; |xogame|b7~2            ; |xogame|b7~2            ; combout          ;
+; |xogame|b3~1            ; |xogame|b3~1            ; combout          ;
+; |xogame|always0~11      ; |xogame|always0~11      ; combout          ;
+; |xogame|always0~12      ; |xogame|always0~12      ; combout          ;
+; |xogame|always0~13      ; |xogame|always0~13      ; combout          ;
+; |xogame|always0~14      ; |xogame|always0~14      ; combout          ;
+; |xogame|w2~8            ; |xogame|w2~8            ; combout          ;
+; |xogame|always0~15      ; |xogame|always0~15      ; combout          ;
+; |xogame|b9~7            ; |xogame|b9~7            ; combout          ;
+; |xogame|always0~16      ; |xogame|always0~16      ; combout          ;
+; |xogame|b5~0            ; |xogame|b5~0            ; combout          ;
+; |xogame|b4[1]~2         ; |xogame|b4[1]~2         ; combout          ;
+; |xogame|b5[1]~1         ; |xogame|b5[1]~1         ; combout          ;
+; |xogame|b6[1]~0         ; |xogame|b6[1]~0         ; combout          ;
+; |xogame|b8[1]~2         ; |xogame|b8[1]~2         ; combout          ;
+; |xogame|b6~1            ; |xogame|b6~1            ; combout          ;
+; |xogame|b2~2            ; |xogame|b2~2            ; combout          ;
+; |xogame|w2~19           ; |xogame|w2~19           ; combout          ;
+; |xogame|b9~9            ; |xogame|b9~9            ; combout          ;
+; |xogame|b1~2            ; |xogame|b1~2            ; combout          ;
+; |xogame|b7[1]~3         ; |xogame|b7[1]~3         ; combout          ;
+; |xogame|b9[1]~10        ; |xogame|b9[1]~10        ; combout          ;
+; |xogame|b8~3            ; |xogame|b8~3            ; combout          ;
+; |xogame|Xin             ; |xogame|Xin~corein      ; combout          ;
+; |xogame|Oin             ; |xogame|Oin~corein      ; combout          ;
+; |xogame|s9              ; |xogame|s9~corein       ; combout          ;
+; |xogame|s6              ; |xogame|s6~corein       ; combout          ;
+; |xogame|s7              ; |xogame|s7~corein       ; combout          ;
+; |xogame|s8              ; |xogame|s8~corein       ; combout          ;
+; |xogame|s2              ; |xogame|s2~corein       ; combout          ;
+; |xogame|s1              ; |xogame|s1~corein       ; combout          ;
+; |xogame|s3              ; |xogame|s3~corein       ; combout          ;
+; |xogame|s4              ; |xogame|s4~corein       ; combout          ;
+; |xogame|s5              ; |xogame|s5~corein       ; combout          ;
+; |xogame|b4[1]~2clkctrl  ; |xogame|b4[1]~2clkctrl  ; outclk           ;
+; |xogame|b2~2clkctrl     ; |xogame|b2~2clkctrl     ; outclk           ;
+; |xogame|b1~2clkctrl     ; |xogame|b1~2clkctrl     ; outclk           ;
+; |xogame|b3~1clkctrl     ; |xogame|b3~1clkctrl     ; outclk           ;
+; |xogame|b5[1]~1clkctrl  ; |xogame|b5[1]~1clkctrl  ; outclk           ;
+; |xogame|b9[1]~10clkctrl ; |xogame|b9[1]~10clkctrl ; outclk           ;
+; |xogame|b7[1]~3clkctrl  ; |xogame|b7[1]~3clkctrl  ; outclk           ;
+; |xogame|b8[1]~2clkctrl  ; |xogame|b8[1]~2clkctrl  ; outclk           ;
+; |xogame|b6[1]~0clkctrl  ; |xogame|b6[1]~0clkctrl  ; outclk           ;
++-------------------------+-------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------+
+; Missing 1-Value Coverage                                     ;
++---------------------+---------------------+------------------+
+; Node Name           ; Output Port Name    ; Output Port Type ;
++---------------------+---------------------+------------------+
+; |xogame|w1~2        ; |xogame|w1~2        ; combout          ;
+; |xogame|w2~2        ; |xogame|w2~2        ; combout          ;
+; |xogame|w2~4        ; |xogame|w2~4        ; combout          ;
+; |xogame|w2~6        ; |xogame|w2~6        ; combout          ;
+; |xogame|w2~9        ; |xogame|w2~9        ; combout          ;
+; |xogame|w2~10       ; |xogame|w2~10       ; combout          ;
+; |xogame|b9~5        ; |xogame|b9~5        ; combout          ;
+; |xogame|w2~11       ; |xogame|w2~11       ; combout          ;
+; |xogame|w2~12       ; |xogame|w2~12       ; combout          ;
+; |xogame|w2~13       ; |xogame|w2~13       ; combout          ;
+; |xogame|w2~14       ; |xogame|w2~14       ; combout          ;
+; |xogame|w2~17       ; |xogame|w2~17       ; combout          ;
+; |xogame|w1~5        ; |xogame|w1~5        ; combout          ;
+; |xogame|w1~7        ; |xogame|w1~7        ; combout          ;
+; |xogame|w1~9        ; |xogame|w1~9        ; combout          ;
+; |xogame|w1~11       ; |xogame|w1~11       ; combout          ;
+; |xogame|w1~12       ; |xogame|w1~12       ; combout          ;
+; |xogame|w1~13       ; |xogame|w1~13       ; combout          ;
+; |xogame|w1~14       ; |xogame|w1~14       ; combout          ;
+; |xogame|w1~15       ; |xogame|w1~15       ; combout          ;
+; |xogame|w1~17       ; |xogame|w1~17       ; combout          ;
+; |xogame|w1~18       ; |xogame|w1~18       ; combout          ;
+; |xogame|w2~18       ; |xogame|w2~18       ; combout          ;
+; |xogame|Equal25~0   ; |xogame|Equal25~0   ; combout          ;
+; |xogame|comb~0      ; |xogame|comb~0      ; combout          ;
+; |xogame|Equal21~0   ; |xogame|Equal21~0   ; combout          ;
+; |xogame|Equal22~0   ; |xogame|Equal22~0   ; combout          ;
+; |xogame|Equal23~0   ; |xogame|Equal23~0   ; combout          ;
+; |xogame|Equal24~0   ; |xogame|Equal24~0   ; combout          ;
+; |xogame|comb~1      ; |xogame|comb~1      ; combout          ;
+; |xogame|comb~2      ; |xogame|comb~2      ; combout          ;
+; |xogame|comb~3      ; |xogame|comb~3      ; combout          ;
+; |xogame|comb~4      ; |xogame|comb~4      ; combout          ;
+; |xogame|comb~5      ; |xogame|comb~5      ; combout          ;
+; |xogame|w2~20       ; |xogame|w2~20       ; combout          ;
+; |xogame|w2~21       ; |xogame|w2~21       ; combout          ;
+; |xogame|b1[1]$latch ; |xogame|b1[1]$latch ; combout          ;
+; |xogame|b2[1]$latch ; |xogame|b2[1]$latch ; combout          ;
+; |xogame|b3[0]$latch ; |xogame|b3[0]$latch ; combout          ;
+; |xogame|b4[0]$latch ; |xogame|b4[0]$latch ; combout          ;
+; |xogame|b5[0]$latch ; |xogame|b5[0]$latch ; combout          ;
+; |xogame|b6[1]$latch ; |xogame|b6[1]$latch ; combout          ;
+; |xogame|b7[1]$latch ; |xogame|b7[1]$latch ; combout          ;
+; |xogame|b8[0]$latch ; |xogame|b8[0]$latch ; combout          ;
+; |xogame|b9[1]$latch ; |xogame|b9[1]$latch ; combout          ;
+; |xogame|b1[1]       ; |xogame|b1[1]       ; padio            ;
+; |xogame|b2[1]       ; |xogame|b2[1]       ; padio            ;
+; |xogame|b3[0]       ; |xogame|b3[0]       ; padio            ;
+; |xogame|b4[0]       ; |xogame|b4[0]       ; padio            ;
+; |xogame|b5[0]       ; |xogame|b5[0]       ; padio            ;
+; |xogame|b6[1]       ; |xogame|b6[1]       ; padio            ;
+; |xogame|b7[1]       ; |xogame|b7[1]       ; padio            ;
+; |xogame|b8[0]       ; |xogame|b8[0]       ; padio            ;
+; |xogame|b9[1]       ; |xogame|b9[1]       ; padio            ;
+; |xogame|w1          ; |xogame|w1          ; padio            ;
+; |xogame|w2          ; |xogame|w2          ; padio            ;
+; |xogame|RST         ; |xogame|RST~corein  ; combout          ;
++---------------------+---------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------+
+; Missing 0-Value Coverage                                     ;
++---------------------+---------------------+------------------+
+; Node Name           ; Output Port Name    ; Output Port Type ;
++---------------------+---------------------+------------------+
+; |xogame|w1~2        ; |xogame|w1~2        ; combout          ;
+; |xogame|w2~2        ; |xogame|w2~2        ; combout          ;
+; |xogame|w2~3        ; |xogame|w2~3        ; combout          ;
+; |xogame|w2~4        ; |xogame|w2~4        ; combout          ;
+; |xogame|w2~5        ; |xogame|w2~5        ; combout          ;
+; |xogame|w2~6        ; |xogame|w2~6        ; combout          ;
+; |xogame|w2~7        ; |xogame|w2~7        ; combout          ;
+; |xogame|w2~9        ; |xogame|w2~9        ; combout          ;
+; |xogame|w2~10       ; |xogame|w2~10       ; combout          ;
+; |xogame|b9~5        ; |xogame|b9~5        ; combout          ;
+; |xogame|b9~6        ; |xogame|b9~6        ; combout          ;
+; |xogame|b9~8        ; |xogame|b9~8        ; combout          ;
+; |xogame|w2~11       ; |xogame|w2~11       ; combout          ;
+; |xogame|w2~12       ; |xogame|w2~12       ; combout          ;
+; |xogame|w2~13       ; |xogame|w2~13       ; combout          ;
+; |xogame|w2~14       ; |xogame|w2~14       ; combout          ;
+; |xogame|w2~15       ; |xogame|w2~15       ; combout          ;
+; |xogame|w2~16       ; |xogame|w2~16       ; combout          ;
+; |xogame|w2~17       ; |xogame|w2~17       ; combout          ;
+; |xogame|w1~3        ; |xogame|w1~3        ; combout          ;
+; |xogame|w1~4        ; |xogame|w1~4        ; combout          ;
+; |xogame|w1~5        ; |xogame|w1~5        ; combout          ;
+; |xogame|w1~6        ; |xogame|w1~6        ; combout          ;
+; |xogame|w1~7        ; |xogame|w1~7        ; combout          ;
+; |xogame|w1~8        ; |xogame|w1~8        ; combout          ;
+; |xogame|w1~9        ; |xogame|w1~9        ; combout          ;
+; |xogame|w1~10       ; |xogame|w1~10       ; combout          ;
+; |xogame|w1~11       ; |xogame|w1~11       ; combout          ;
+; |xogame|w1~12       ; |xogame|w1~12       ; combout          ;
+; |xogame|w1~13       ; |xogame|w1~13       ; combout          ;
+; |xogame|w1~14       ; |xogame|w1~14       ; combout          ;
+; |xogame|w1~15       ; |xogame|w1~15       ; combout          ;
+; |xogame|w1~16       ; |xogame|w1~16       ; combout          ;
+; |xogame|w1~17       ; |xogame|w1~17       ; combout          ;
+; |xogame|w1~18       ; |xogame|w1~18       ; combout          ;
+; |xogame|w2~18       ; |xogame|w2~18       ; combout          ;
+; |xogame|w2~20       ; |xogame|w2~20       ; combout          ;
+; |xogame|w2~21       ; |xogame|w2~21       ; combout          ;
+; |xogame|b1[0]$latch ; |xogame|b1[0]$latch ; combout          ;
+; |xogame|b1[1]$latch ; |xogame|b1[1]$latch ; combout          ;
+; |xogame|b2[0]$latch ; |xogame|b2[0]$latch ; combout          ;
+; |xogame|b2[1]$latch ; |xogame|b2[1]$latch ; combout          ;
+; |xogame|b3[0]$latch ; |xogame|b3[0]$latch ; combout          ;
+; |xogame|b3[1]$latch ; |xogame|b3[1]$latch ; combout          ;
+; |xogame|b4[0]$latch ; |xogame|b4[0]$latch ; combout          ;
+; |xogame|b4[1]$latch ; |xogame|b4[1]$latch ; combout          ;
+; |xogame|b5[0]$latch ; |xogame|b5[0]$latch ; combout          ;
+; |xogame|b5[1]$latch ; |xogame|b5[1]$latch ; combout          ;
+; |xogame|b6[0]$latch ; |xogame|b6[0]$latch ; combout          ;
+; |xogame|b6[1]$latch ; |xogame|b6[1]$latch ; combout          ;
+; |xogame|b7[0]$latch ; |xogame|b7[0]$latch ; combout          ;
+; |xogame|b7[1]$latch ; |xogame|b7[1]$latch ; combout          ;
+; |xogame|b8[0]$latch ; |xogame|b8[0]$latch ; combout          ;
+; |xogame|b8[1]$latch ; |xogame|b8[1]$latch ; combout          ;
+; |xogame|b9[0]$latch ; |xogame|b9[0]$latch ; combout          ;
+; |xogame|b9[1]$latch ; |xogame|b9[1]$latch ; combout          ;
+; |xogame|b1[0]       ; |xogame|b1[0]       ; padio            ;
+; |xogame|b1[1]       ; |xogame|b1[1]       ; padio            ;
+; |xogame|b2[0]       ; |xogame|b2[0]       ; padio            ;
+; |xogame|b2[1]       ; |xogame|b2[1]       ; padio            ;
+; |xogame|b3[0]       ; |xogame|b3[0]       ; padio            ;
+; |xogame|b3[1]       ; |xogame|b3[1]       ; padio            ;
+; |xogame|b4[0]       ; |xogame|b4[0]       ; padio            ;
+; |xogame|b4[1]       ; |xogame|b4[1]       ; padio            ;
+; |xogame|b5[0]       ; |xogame|b5[0]       ; padio            ;
+; |xogame|b5[1]       ; |xogame|b5[1]       ; padio            ;
+; |xogame|b6[0]       ; |xogame|b6[0]       ; padio            ;
+; |xogame|b6[1]       ; |xogame|b6[1]       ; padio            ;
+; |xogame|b7[0]       ; |xogame|b7[0]       ; padio            ;
+; |xogame|b7[1]       ; |xogame|b7[1]       ; padio            ;
+; |xogame|b8[0]       ; |xogame|b8[0]       ; padio            ;
+; |xogame|b8[1]       ; |xogame|b8[1]       ; padio            ;
+; |xogame|b9[0]       ; |xogame|b9[0]       ; padio            ;
+; |xogame|b9[1]       ; |xogame|b9[1]       ; padio            ;
+; |xogame|w1          ; |xogame|w1          ; padio            ;
+; |xogame|w2          ; |xogame|w2          ; padio            ;
+; |xogame|tie         ; |xogame|tie         ; padio            ;
++---------------------+---------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Thu Aug 18 22:20:29 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off xogame -c xogame
+Info: Using vector source file "C:/Users/Faiz/Documents/UOS/dld lab/project2/xogame.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      39.46 %
+Info: Number of transitions in simulation is 253
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 175 megabytes
+    Info: Processing ended: Thu Aug 18 22:20:30 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
